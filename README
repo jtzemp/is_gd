@@ -1,0 +1,10 @@
+=is_gd library
+
+# is_gd is a library to minify URLs using http://is.gd service, so you'll (obviously) need a network connection.
+# More info here: http://is.gd/api_info.php
+
+This is such a simple library, it doesn't need much explanation at all. There are two modes:
+#You give it a URL, and it will give you back a URL minified with http://is.gd
+  IsGd.minify('www.google.com') (returns: 'http://is.gd/2')
+#You give it an is.gd minified URL and it will tell you the source URL.
+  IsGd.un_minify('http://is.gd/2') (returns: 'http://www.google.com')

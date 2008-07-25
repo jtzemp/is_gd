@@ -1,0 +1,7 @@
+google_one:
+    original_url: http://google.com
+    is_gd_url:  http://is.gd/13nX
+
+google_two:
+    original_url: www.google.com
+    is_gd_url: http://is.gd/2
