@@ -1,0 +1,7 @@
+LICENSE
+README
+Manifest.txt
+is_gd.gemspec
+is_gd.rb
+test/fixtures.yaml
+test/test_is_gd.rb
