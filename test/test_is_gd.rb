@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/test_helper.rb'
 
 class TestIsGd < Test::Unit::TestCase
-  FIXTURES_FILE = File.dirname(__FILE__) + '/test/fixtures.yaml'
+  FIXTURES_FILE = File.dirname(__FILE__) + '/fixtures.yaml'
   
   def test_google_minify
     is_gd_url = IsGd.minify(@fixtures["google_one"]["original_url"])

@@ -1,11 +1,90 @@
-<html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<title>is_gd</title>
-		
-	</head>
-	<body id="body">
-		<p>This page has not yet been created for RubyGem <code>is_gd</code></p>
-		<p>To the developer: To generate it, update website/index.txt and run the rake task <code>website</code> to generate this <code>index.html</code> file.</p>
-	</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+      is_gd
+  </title>
+  <script src="javascripts/rounded_corners_lite.inc.js" type="text/javascript"></script>
+<style>
+
+</style>
+  <script type="text/javascript">
+    window.onload = function() {
+      settings = {
+          tl: { radius: 10 },
+          tr: { radius: 10 },
+          bl: { radius: 10 },
+          br: { radius: 10 },
+          antiAlias: true,
+          autoPad: true,
+          validTags: ["div"]
+      }
+      var versionBox = new curvyCorners(settings, document.getElementById("version"));
+      versionBox.applyCornersToAll();
+    }
+  </script>
+</head>
+<body>
+<div id="main">
+
+    <h1>is_gd</h1>
+    <div id="version" class="clickable" onclick='document.location = "http://rubyforge.org/projects/is_gd"; return false'>
+      <p>Get Version</p>
+      <a href="http://rubyforge.org/projects/is_gd" class="numbers">0.1.0</a>
+    </div>
+    <h2>What</h2>
+<ol>
+	<li>is_gd is a library to minify URLs using <a href="http://is.gd">http://is.gd</a> service, so you&#8217;ll (obviously) need a network connection.</li>
+	<li>More info here on the <span class="caps">API</span> itself: <a href="http://is.gd/api_info.php">http://is.gd/api_info.php</a></li>
+</ol>
+<p>This is such a simple library, it doesn&#8217;t need much explanation at all. There are two modes:<br />
+#You give it a <span class="caps">URL</span>, and it will give you back a <span class="caps">URL</span> minified with is.gd<br />
+  IsGd.minify(&#8216;www.google.com&#8217;) (returns: &#8216;http://is.gd/2&#8217;)<br />
+#You give it an is.gd minified <span class="caps">URL</span> and it will tell you the source <span class="caps">URL</span>.<br />
+  IsGd.un_minify(&#8216;http://is.gd/2&#8217;) (returns: &#8216;http://www.google.com&#8217;)<br />
+  <br />
+h2. Developer&#8217;s Site</p>
+<p><a href="http://geekjacking.com/is_gd">http://geekjacking.com/is_gd</a></p>
+<h2>Install it!</h2>
+<p><pre class='syntax'><span class="ident">sudo</span> <span class="ident">gem</span> <span class="ident">install</span> <span class="ident">is_gd</span></pre></p>
+<h2>Use it!</h2>
+<p><pre class='syntax'><span class="ident">puts</span> <span class="constant">IsGd</span><span class="punct">.</span><span class="ident">minify</span><span class="punct">('</span><span class="string">www.google.com</span><span class="punct">')</span> <span class="comment">#=&gt; 'http://is.gd/2'</span>
+<span class="ident">puts</span> <span class="constant">IsGd</span><span class="punct">.</span><span class="ident">un_minify</span><span class="punct">('</span><span class="string">http://is.gd/2</span><span class="punct">')</span> <span class="comment">#=&gt; 'http://www.google.com'</span>
+
+<span class="ident">h2</span><span class="punct">.</span> <span class="ident">How</span> <span class="ident">to</span> <span class="ident">submit</span> <span class="ident">patches</span>
+
+<span class="constant">Read</span> <span class="ident">the</span> <span class="punct">&quot;</span><span class="string">8 steps for fixing other people's code</span><span class="punct">&quot;</span><span class="symbol">:http</span><span class="punct">:/</span><span class="regex"></span><span class="punct">/</span><span class="ident">drnicwilliams</span><span class="punct">.</span><span class="ident">com</span><span class="punct">/</span><span class="number">2007</span><span class="punct">/</span><span class="number">06</span><span class="punct">/</span><span class="number">01</span><span class="punct">/</span><span class="number">8</span><span class="punct">-</span><span class="ident">steps</span><span class="punct">-</span><span class="keyword">for</span><span class="punct">-</span><span class="ident">fixing</span><span class="punct">-</span><span class="ident">other</span><span class="punct">-</span><span class="ident">peoples</span><span class="punct">-</span><span class="ident">code</span><span class="punct">/.</span> <span class="ident">It</span><span class="punct">'</span><span class="string">s good, but doesn</span><span class="punct">'</span><span class="ident">t</span> <span class="ident">have</span> <span class="ident">instructions</span> <span class="keyword">for</span> <span class="constant">GitHub</span><span class="punct">,</span> <span class="ident">so</span> <span class="ident">come</span> <span class="ident">back</span> <span class="ident">here</span> <span class="ident">after</span> <span class="ident">you</span><span class="punct">'</span><span class="string">re done and read on.
+
+If you want to submit patches (or check out the code to see how to change from base 10 to base 62) the project code is on GitHub. Here are good instructions for submitting patches through GitHub: &quot;http://github.com/guides/fork-a-project-and-submit-your-modifications&quot;:http://github.com/guides/fork-a-project-and-submit-your-modifications
+
+* github: &quot;http://github.com/jtzemp/is_gd/tree/master&quot;:http://github.com/jtzemp/is_gd/tree/master
+
+&lt;pre&gt;git clone git://github.com/jtzemp/is_gd.git</span></pre></p>
+<h3>Build and test instructions</h3>
+<pre>cd is_gd
+rake test
+rake install_gem</pre>
+<h2>License</h2>
+<p>This code is free to use under the terms of the <span class="caps">MIT</span> license.</p>
+<h2>Contact</h2>
+<p>Comments are welcome. I&#8217;d love to know if you&#8217;re using it just out of curiosity. Send an email to JT dot Zemp at the domain thriveis.com, or go to <a href="http://geekjacking.com/is_gd">http://geekjacking.com/is_gd</a> and leave a comment there.</p>
+    <p class="coda">
+      <a href="http://geekjacking.com/about/">JT Zemp</a> (<a href="http://twitter.com/jtzemp">JT Zemp on Twitter</a>), 7th October 2008<br>
+      Theme extended from <a href="http://rb2js.rubyforge.org/">Paul Battley</a>
+    </p>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3918224-5");
+pageTracker._trackPageview();
+</script>
+
+</body>
 </html>
