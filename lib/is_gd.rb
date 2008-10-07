@@ -8,7 +8,7 @@ require 'net/http'
 # More info here: http://is.gd/api_info.php
 class IsGd
   IS_GD_URL = "http://is.gd/api.php?longurl="
-  USER_AGENT = "is_gd ruby library"
+  USER_AGENT = "is_gd ruby library http://is-gd.rubyforge.org"
   attr_reader :original_url, :minified_url
   def initialize(url=nil)
     @original_url = url

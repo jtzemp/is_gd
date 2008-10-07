@@ -1,0 +1,3 @@
+
+For more information on is_gd, see http://is-gd.rubyforge.org
+
