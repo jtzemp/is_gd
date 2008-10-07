@@ -1,7 +1,9 @@
 History.txt
 Manifest.txt
 PostInstall.txt
+README
 README.rdoc
+README.txt
 Rakefile
 config/hoe.rb
 config/requirements.rb
@@ -15,6 +17,7 @@ setup.rb
 tasks/deployment.rake
 tasks/environment.rake
 tasks/website.rake
+test/fixtures.yaml
 test/test_helper.rb
 test/test_is_gd.rb
 website/index.html
