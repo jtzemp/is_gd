@@ -1,16 +1,17 @@
 h1. is_gd
 
-h2. What
+h2. What is the "is_gd ruby library":http://geekjacking.com/is_gd?
 
-# is_gd is a library to minify URLs using "http://is.gd":http://is.gd service, so you'll (obviously) need a network connection.
+# is_gd is a library to minify URLs using "http://is.gd":http://is.gd service.
 # More info here on the API itself: "http://is.gd/api_info.php":http://is.gd/api_info.php
 
 This is such a simple library, it doesn't need much explanation at all. There are two modes:
-#You give it a URL, and it will give you back a URL minified with is.gd
+# You give it a URL, and it will give you back a URL minified with is.gd
   IsGd.minify('www.google.com') (returns: 'http://is.gd/2')
-#You give it an is.gd minified URL and it will tell you the source URL.
+# You give it an is.gd minified URL and it will tell you the source URL.
   IsGd.un_minify('http://is.gd/2') (returns: 'http://www.google.com')
   
+
 h2. Developer's Site
 
 "http://geekjacking.com/is_gd":http://geekjacking.com/is_gd
@@ -21,8 +22,9 @@ h2. Install it!
 
 h2. Use it!
 
-<pre syntax="ruby">puts IsGd.minify('www.google.com') #=> 'http://is.gd/2'
-puts IsGd.un_minify('http://is.gd/2') #=> 'http://www.google.com'
+<pre syntax="ruby">require 'is_gd'
+puts IsGd.minify('www.google.com') #=> 'http://is.gd/2'
+puts IsGd.un_minify('http://is.gd/2') #=> 'http://www.google.com'</pre>
 
 h2. How to submit patches
 
