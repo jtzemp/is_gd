@@ -64,7 +64,7 @@ class IsGd
   
   # encode a url based on is.gd's very lenient guidelines
   def url_encode(url)
-    url.gsub(':','%3B').gsub('#', '%23')
+    URI.encode(url)
   end
 end
 
