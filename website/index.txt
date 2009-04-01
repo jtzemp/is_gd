@@ -43,6 +43,9 @@ h3. Build and test instructions
 rake test
 rake install_gem</pre>
 
+h3. Thanks
+
+* Simone Dall'Angelo for improving parsing of the URI to be more standard
 
 h2. License
 
