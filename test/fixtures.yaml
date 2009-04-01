@@ -1,7 +1,15 @@
 google_one:
     original_url: http://google.com
-    is_gd_url:  http://is.gd/13nX
+    is_gd_url:  http://is.gd/w
 
 google_two:
     original_url: www.google.com
     is_gd_url: http://is.gd/2
+
+google_maps:
+    original_url: "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=white house&sll=52.718411,1.626663&sspn=0.246227,0.637207&ie=UTF8&ll=38.897563,-77.037377&spn=0.009886,0.019913&t=h&z=16"
+    is_gd_url: http://is.gd/q6TQ
+    
+apache_docs:
+    original_url: "http://httpd.apache.org/docs/2.0/mod/core.html#documentroot"
+    is_gd_url: http://is.gd/q720
